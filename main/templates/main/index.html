@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    <p>Таблица Сотрудники<p>
+    {% for el in people %}
+        <div>
+            <h3>{{ el.firstname}}</h3> <h3>{{ el.lastname}}</h3>
+            <p>{{ el.age }}</p>
+            <p>{{ el.post }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

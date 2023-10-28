@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>Таблица должности</h1>
+    {% for el in dol %}
+        <div>
+            <h3>{{ el.name}}</h3> 
+        </div>
+    {% endfor %}
+{% endblock %}
